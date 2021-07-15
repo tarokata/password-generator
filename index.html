@@ -1,0 +1,51 @@
+<!DOCTYPE html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>Password Generator with JavaScript</title>
+</head>
+
+<body>
+    <form id="password-generate-form">
+        <div class="container">
+            <h2>Password Generator</h2>
+            <div class="result__container">
+                <span id="result"></span>
+                <button id="copy">Copy</button>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <label>Length</label>
+                    <input type="number" id="length" min="10" max="64" value="16">
+                </div>
+                <div class="option">
+                    <label>Include Uppercase</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <div class="option">
+                    <label>Include Lowercase</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+                <div class="option">
+                    <label>Include Numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div class="option">
+                    <label>Include Symbols</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+                <div class="option">
+                    <label>Lastest Generator Function</label>
+                    <input type="checkbox" id="lastest-version" checked>
+                </div>
+            </div>
+            <button class="btn" id="generate-btn" type="submit">Generate Password</button>
+        </div>
+    </form>
+</body>
+</html>
